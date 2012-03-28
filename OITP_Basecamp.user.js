@@ -5,7 +5,7 @@
 // @include        https://oti.basecamphq.com/projects/9015896-open-internet-tools-project-oitp/time_entries
 // @updateURL      https://github.com/jvasile/OITP-Basecamp/raw/master/OITP_Basecamp.user.js
 // @downloadURL    https://github.com/jvasile/OITP-Basecamp/raw/master/OITP_Basecamp.user.js
-// @version        1.0
+// @version        1.1
 // ==/UserScript==
 
 var descrip = document.getElementById('time_entry_description');
