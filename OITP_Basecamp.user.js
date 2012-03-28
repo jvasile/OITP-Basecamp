@@ -3,8 +3,8 @@
 // @namespace      http://jamesvasile.com
 // @description    Add drop downs to the OITP basecamp Time log descriptions
 // @include        https://oti.basecamphq.com/projects/9015896-open-internet-tools-project-oitp/time_entries
-// @updateURL      http://jamesvasile.com/code/OITP_Basecamp.user.js
-// @downloadURL    http://jamesvasile.com/code/OITP_Basecamp.user.js
+// @updateURL      https://github.com/jvasile/OITP-Basecamp/raw/master/OITP_Basecamp.user.js
+// @downloadURL    https://github.com/jvasile/OITP-Basecamp/raw/master/OITP_Basecamp.user.js
 // @version        1.0
 // ==/UserScript==
 
