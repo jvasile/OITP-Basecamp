@@ -5,7 +5,7 @@
 // @include        https://oti.basecamphq.com/projects/*/time_entries
 // @updateURL      https://github.com/jvasile/OITP-Basecamp/raw/master/OITP_Basecamp.user.js
 // @downloadURL    https://github.com/jvasile/OITP-Basecamp/raw/master/OITP_Basecamp.user.js
-// @version        1.2
+// @version        1.3
 // ==/UserScript==
 
 var project = '';
@@ -89,6 +89,9 @@ switch(project)
 var optLength = options.length;
 if(optLength > 0)
 {
+  options.push("PTO");
+  optLength = options.length;
+
   var selector = '<select id="time_entry_description" name="time_entry[description]">';
   for(var i=0; i<optLength; i++)
   {
