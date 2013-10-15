@@ -5,7 +5,7 @@
 // @include        https://oti.basecamphq.com/projects/*/time_entries
 // @updateURL      https://github.com/jvasile/OITP-Basecamp/raw/master/OITP_Basecamp.user.js
 // @downloadURL    https://github.com/jvasile/OITP-Basecamp/raw/master/OITP_Basecamp.user.js
-// @version        1.3
+// @version        1.4
 // ==/UserScript==
 
 var project = '';
@@ -79,17 +79,41 @@ switch(project)
     options[3] = "In-kind Open Source Developer Time";
     break;
   case 'Commotion':
-    options[0] = "Development";
-    options[1] = "Deployment and Documentation";
-    options[2] = "Project Monitoring and Evaluation";
-    options[3] = "In-Kind Open-Source Developer Time";
+    options = new Array(
+    "Development, Local Apps (USAID)",
+    "Deployment and Documentation, MENA Network (DRL)",
+    "Deployment, India Workshop (Non-Fed)",
+    "Deployment Support, Redhook Testbed (USAID)",
+    "Deployment Support, Partner Management (USAID)",
+    "Deployment Support, General (USAID)",
+    "Development, GSM (USAID)",
+    "Development, Secure Chat (USAID)",
+    "Development, Offline Wikipedia (USAID)",
+    "Development, General (USAID)",
+    "Development, Security Architecture (DRL)",
+    "Development, General (DRL)",
+    "Project Monitoring and Evaluation (USAID)",
+    "Project Monitoring and Evaluation (DRL)",
+    "PTO (DRL)",
+    "PTO (USAID)",
+    "NAF Holiday (DRL)",
+    "NAF Holiday (USAID)",
+    "Bereavement leave (DRL)",
+    "Bereavement leave (USAID)",
+    "Family leave (DRL)",
+    "Family leave (USAID)",
+    "Sick leave (DRL)",
+    "Sick leave (USAID)"
+    );
     break;
 }
 
 var optLength = options.length;
 if(optLength > 0)
 {
-  options.push("PTO");
+  if (project != 'Commotion') {
+    options.push("PTO");
+  }
   optLength = options.length;
 
   var selector = '<select id="time_entry_description" name="time_entry[description]">';
